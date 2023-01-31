@@ -1,0 +1,248 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(../assets/fundo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.paragrafo{
+    text-indent: 30px;
+    color: #231f20ff;
+    text-align: justify;
+}
+.subtitulo{
+    color: #808080ff;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #00a6aa;
+    line-height: 0;
+    align-items: center;
+}
+
+
+#logo{
+    width: 50%;
+    margin: 150px; 
+}
+.nav_social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #231f20ff;
+    width: 40%;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8)
+}
+.hl{
+    display: contents;
+    border-top: 3px solid #231f20ff;
+    width: 95%;
+   
+}
+#dados_pessoais section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dados_pessoais{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+#dados_pessoais section div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+#dados_pessoais section div h4{
+    margin: 5px;
+}
+
+#contato div img{
+    width: 25px;
+}
+
+.icon{
+    width: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+article{
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 25px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+}
+
+
+.sobre-mim{
+    display: flex;
+    flex-direction: row;
+}
+
+#profile{
+    width: 350px;
+    border-radius: 100%;
+    margin-left: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+
+}
+
+#projetos-container{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;  
+}
+#projetos-container article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    width: 100%;
+    box-sizing: border-box;  
+
+}
+
+#projetos-container img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#footer-container{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #00a6aa;
+    line-height: 0;
+    align-items: center;
+}
+
+#galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#galeria a img{
+    width: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+
+#galeria a img:hover{
+    width: 520px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#footer-container p {
+    font-size: large;
+    font-style: oblique;
+    margin-top: 50px;
+}
+
+.nav_projeto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #231f20ff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    
+}
+.nav_projeto a{
+    background-color: #6aff6cff;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #231f20ff;
+}
+.nav_projeto a:hover{
+    background-color: rgb(77, 185, 79);
+    
+}
+
+/* Wave form CSS*/
+.custom-shape-divider-top-1675083530 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1675083530 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 169px;
+    filter: drop-shadow(0px 5px 5px rgb(0 0 0 / 0.4));
+}
+
+.custom-shape-divider-top-1675083530 .shape-fill {
+    fill: #00a6aa;
+    
+}
+
+.custom-shape-divider-bottom-1675105853 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1675105853 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 191px;
+    filter: drop-shadow(0px 5px 5px rgb(0 0 0 / 0.4));
+}
+
+.custom-shape-divider-bottom-1675105853 .shape-fill {
+    fill: #00a6aa;
+}
+
+/* Wave forme finally*/

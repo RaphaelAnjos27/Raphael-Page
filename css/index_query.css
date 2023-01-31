@@ -1,0 +1,86 @@
+@media only screen and (max-width: 600px) {
+
+    .header-container{
+        display: flex;
+        flex-direction: row;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #00a6aa;
+        justify-content: center;
+    }
+
+    #logo{
+        width: 80%;
+        height: auto;
+        margin: 0px; 
+    }
+    article{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+        padding: 25px;
+
+        background: rgba(255, 255, 255, 0.56);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.2px);
+        -webkit-backdrop-filter: blur(8.2px);
+    }
+    .sobre-mim{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #profile{
+        width: 100%;
+        border-radius: 100%;
+        margin-left: 0px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+    
+    }
+
+    #projetos-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #projetos-container article{
+        margin: 5px 0px 5px 0px; 
+    }
+    
+    #galeria{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    
+    #galeria a img{
+        width: 100%;
+        margin: 0px;
+        border-radius: 20px;
+    }
+
+    #galeria a img:hover{
+        width: 95%;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+    #footer-container p {
+        font-size: 0.7rem;
+        margin-top: 50px;
+        
+    }
+    .nav_social{
+        width: 90%;
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 20px;
+        
+    }
+}
