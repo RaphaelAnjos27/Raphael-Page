@@ -1,4 +1,7 @@
-
+:root{
+    --primary-color:#00a6aa;
+    --secundary-color:rgb(0, 129, 131);
+}
 
 body{
     margin: 0;
@@ -17,7 +20,7 @@ body{
     text-align: justify;
 }
 .subtitulo{
-    color: #808080ff;
+    color: rgb(68, 68, 68);
 }
 
 .header-container{
@@ -27,8 +30,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    background-color: #00a6aa;
+    background-image: linear-gradient(to right,var(--primary-color),var(--secundary-color));
     line-height: 0;
     align-items: center;
 }
@@ -37,22 +39,34 @@ body{
 #logo{
     width: 50%;
     margin: 150px; 
+    animation: logo 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 60% cover 100%;
+       
 }
 .nav_social{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     background-color: #231f20ff;
     width: 40%;
-    padding: 15px;
+    padding: 10px;
     border-radius: 25px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8)
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+
+    animation: footer 5s ease-in-out; 
+    animation-timeline: view();
+    animation-range: cover 0%  cover 25%;
+}
+.nav_social a {
+    margin: 10px 0 10px 0;  
 }
 .hl{
     display: contents;
     border-top: 3px solid #231f20ff;
     width: 95%;
-   
+
 }
 #dados_pessoais section{
     display: flex;
@@ -90,18 +104,24 @@ body{
     margin-right: 25px;
 }
 
-article{
+.principal{
     margin-left: 70px;
     margin-right: 70px;
-    padding: 25px;
+    padding: 50px 100px 50px 100px;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.56);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.2px);
     -webkit-backdrop-filter: blur(8.2px);
+    
 }
 
+
+h1{
+    border-bottom: 2px solid black;
+
+}
 
 .sobre-mim{
     display: flex;
@@ -122,12 +142,18 @@ article{
     box-sizing: border-box;  
 }
 #projetos-container article{
+    margin-left: 70px;
+    margin-right: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 5px;
     width: 100%;
     box-sizing: border-box;  
+    background: rgba(255, 255, 255, 0.56);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -143,8 +169,8 @@ article{
     left: 0;
     width: 100%;
     height: 200px;
-    overflow: hidden;
-    background-color: #00a6aa;
+    padding-bottom: 25px;
+    background-image: linear-gradient(to right,var(--primary-color),var(--secundary-color));
     line-height: 0;
     align-items: center;
 }
@@ -158,10 +184,12 @@ article{
 }
 
 #galeria a img{
-    width: 500px;
+    width: 400px;
     margin: 10px;
     border-radius: 10px;
-    
+    animation: imagens 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 50%;
 }
 
 #galeria a img:hover{
@@ -219,7 +247,7 @@ article{
 }
 
 .custom-shape-divider-top-1675083530 .shape-fill {
-    fill: #00a6aa;
+    fill: url(#MyGradient);
     
 }
 
@@ -242,7 +270,44 @@ article{
 }
 
 .custom-shape-divider-bottom-1675105853 .shape-fill {
-    fill: #00a6aa;
+    fill: url(#MyGradient2);
 }
 
 /* Wave forme finally*/
+
+
+/* Animações da Pagina */
+
+@keyframes imagens {
+    from{
+        opacity: 0;
+        scale:0 0;
+        filter: blur(10px);
+    }
+    to{
+        opacity: 1;
+        scale: 1 1;
+        filter: blur(0px);
+    }
+}
+@keyframes logo {
+    from{
+        opacity: 1;
+        scale: 1 1;
+        filter: blur(0px);
+    }
+    to{
+        opacity: 0;
+        scale: 0 0;
+        filter: blur(20px);
+    }
+}
+@keyframes footer {
+    from{
+        scale: 0 0.2;
+        
+    }
+    to{
+        scale: 1 1;
+    }
+}

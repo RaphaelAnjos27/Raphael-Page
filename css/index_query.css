@@ -7,7 +7,6 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        overflow: hidden;
         background-color: #00a6aa;
         justify-content: center;
     }
@@ -17,7 +16,7 @@
         height: auto;
         margin: 0px; 
     }
-    article{
+    .principal{
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 25px;
@@ -51,14 +50,7 @@
         margin: 5px 0px 5px 0px; 
     }
     
-    #galeria{
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-    }
+    
     
     #galeria a img{
         width: 100%;
@@ -81,6 +73,11 @@
         padding: 10px;
         border-radius: 15px;
         margin-top: 20px;
+        
+    }
+    .nav_social a img{
+        width: 30px;
+        
         
     }
 }
